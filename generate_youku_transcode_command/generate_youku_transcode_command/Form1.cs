@@ -28,7 +28,7 @@ namespace generate_youku_transcode_command
         {
             /* 设置一些默认值 */
             ui_textbox_src.Text = @"D:\Youku Files\download";
-            ui_textbox_des.Text = @"C:\Documents and Settings\kora.hacker\桌面\罗辑思维";
+            ui_textbox_des.Text = @"D:\Youku Files\transcode";
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -49,7 +49,7 @@ namespace generate_youku_transcode_command
                 ui_msg_out.AppendText(file_name + "\n");
             }*/
 
-            StreamWriter sw = new StreamWriter(@"C:\Documents and Settings\kora.hacker\桌面\" + simple_uuid_string() + ".bat");
+            StreamWriter sw = new StreamWriter(/*@"C:\Documents and Settings\kora.hacker\桌面\" +*/ simple_uuid_string() + ".bat");
             
             ui_msg_out.AppendText("@echo off\r\n");
             ui_msg_out.AppendText("cls\r\n");

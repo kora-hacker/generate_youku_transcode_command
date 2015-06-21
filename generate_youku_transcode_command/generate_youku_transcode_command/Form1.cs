@@ -49,7 +49,7 @@ namespace generate_youku_transcode_command
                 ui_msg_out.AppendText(file_name + "\n");
             }*/
 
-            StreamWriter sw = new StreamWriter(/*@"C:\Documents and Settings\kora.hacker\桌面\" +*/ simple_uuid_string() + ".bat");
+            StreamWriter sw = new StreamWriter(/*@"C:\Documents and Settings\kora.hacker\桌面\" +*/ simple_uuid_string() + ".bat",false,Encoding.Default);
             
             ui_msg_out.AppendText("@echo off\r\n");
             ui_msg_out.AppendText("cls\r\n");
